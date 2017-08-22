@@ -39,7 +39,7 @@ private {
     static if( Derelict_OS_Windows )
         enum libNames = "libegl.dll";
     else static if( Derelict_OS_Posix && !Derelict_OS_Mac )
-        enum libNames = "libEGL.so.1,libEGL.so";
+        enum libNames = "libEGL.so.1,libEGL.so,/opt/vc/lib/libbrcmEGL.so";
     else
         static assert( 0, "Need to implement EGL libNames for this operating system." );
 }

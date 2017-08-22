@@ -42,7 +42,7 @@ private {
     static if( Derelict_OS_Windows )
         enum libNames = "libglesv2.dll";
     else static if( Derelict_OS_Posix && !Derelict_OS_Mac )
-        enum libNames = "libGLESv2.so.2,libGLESv2.so";
+        enum libNames = "libGLESv2.so.2,libGLESv2.so,/opt/vc/lib/libbrcmGLESv2.so";
     else
         static assert( 0, "Need to implement OpenGLESv2 libNames for this operating system." );
 }
