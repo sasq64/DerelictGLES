@@ -27,6 +27,7 @@ DEALINGS IN THE SOFTWARE.
 */
 module derelict.gles.eglext;
 
+import derelict.gles.eglplatform;
 import derelict.gles.egltypes;
 import derelict.gles.internal;
 import core.stdc.stdint;

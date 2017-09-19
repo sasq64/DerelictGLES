@@ -69,4 +69,4 @@ else static if( Derelict_OS_Posix && !Derelict_OS_Mac ) {
     // }
 }
 else
-    static assert( 0, "Need to implement EGL types for this operating system." );
+    static assert( false, "Need to implement EGL types for this operating system." );
